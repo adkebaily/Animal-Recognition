@@ -38,7 +38,7 @@ Animal-Recognition/
 
 🚀 Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/sl4yerr/Animal-Recognition-Chatbot.git
+git clone https://github.com/adkebaily/Animal-Recognition-Chatbot.git
 cd Animal-Recognition
 
 2️⃣ Install Dependencies
