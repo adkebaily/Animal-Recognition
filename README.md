@@ -4,11 +4,11 @@ Image classification of animal photos into 90 species with a Vision Transformer 
 
 ## Where the files are
 
-The code, the dataset and the trained model are not in this repository. They are in a Google Drive folder, as three zip files (`Animal_dataset`, `vit_model` and the Python code):
+The training script is in this repository: [`animal_recognition.py`](animal_recognition.py). The dataset (about 690 MB) and the trained model (about 320 MB) are too large for GitHub, so they are in a Google Drive folder:
 
 https://drive.google.com/drive/folders/1-9O1tVvN1U1fdPU0BB-PBp1eu0fyBncv?usp=sharing
 
-Download the three files to get the full project.
+To train the model again, run the script on Kaggle with the dataset attached (it reads it from `/kaggle/input/animal-image-dataset-90-different-animals`). Set `image_path` at the end of the script to try the model on your own picture.
 
 ## How it works
 
