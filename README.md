@@ -1,65 +1,23 @@
-# Animal-Recognition
+# Animal recognition with a Vision Transformer
 
-⚠️ ⚠️⚠️⚠️⚠️ Most the files here files you can find it in my drive links "Format zip for 'Animal_dataset' & 'vit_model' & 'the code python' " : https://drive.google.com/drive/folders/1-9O1tVvN1U1fdPU0BB-PBp1eu0fyBncv?usp=sharing
-"download all the file because it has everything"
+Image classification of animal photos with a Vision Transformer (ViT). I fine-tuned the pretrained `google/vit-base-patch16-224-in21k` model on an animal image dataset, using PyTorch and Hugging Face Transformers.
 
+## Where the files are
 
+The code, the dataset and the trained model are not in this repository. They are in a Google Drive folder, as three zip files (`Animal_dataset`, `vit_model` and the Python code):
 
-🐶🐱 Animal Recognition & Chatbot using Vision Transformers
-🚀 Deep Learning-powered image classifier that identifies whether an image contains a dog or cat using Vision Transformers. 
+https://drive.google.com/drive/folders/1-9O1tVvN1U1fdPU0BB-PBp1eu0fyBncv?usp=sharing
 
-📌 Features
-✅ Image Classification: Detects if an image contains a dog or a cat using Vision Transformers (ViT)
-✅ Deep Learning Model: Pretrained google/vit-base-patch16-224-in21k model
-✅ Real-time Inference: Optimized for fast predictions
-✅ Model Training: Fine-tuned on a custom dataset of animal images
+Download the three files to get the full project.
 
-🛠️ Technologies Used
-✅ Python
-✅ PyTorch (for Deep Learning model)
-✅ Transformers (Hugging Face)
-✅ Torchvision (for image preprocessing)
-✅ Scikit-learn (for evaluation metrics)
-✅ PIL (Pillow) (for image handling)
+## How it works
 
-📂 Project Structure
-Animal-Recognition/
-│── models/               # Trained model files  
-│── dataset/              # Sample dataset (if included)  
-│── src/                  # Source code  
-│   ├── vision_transformer.py  # ViT model  
-│   ├── inference.py           # Image classification  
-│   ├── train.py               # Training script  
-│── requirements.txt      # Dependencies  
-│── README.md             # Documentation  
-│── demo/                 # Screenshots or demo videos  
-│── LICENSE               # License file  
-│── .gitignore            # Ignore unnecessary files  
+The model takes 224 × 224 images cut into 16 × 16 patches and reads the patches as a sequence. Starting from weights pretrained on ImageNet-21k, I fine-tuned it on the animal dataset (transfer learning) and trained it on a GPU in Google Colab.
 
-🚀 Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/adkebaily/Animal-Recognition-Chatbot.git
-cd Animal-Recognition
+## Technologies
 
-2️⃣ Install Dependencies
-pip install -r requirements.txt
+Python, PyTorch, Hugging Face Transformers, torchvision for image preprocessing, scikit-learn for the evaluation metrics, Pillow, Google Colab and Kaggle.
 
-3️⃣ Run Model Training
-python train.py
+## Author
 
-4️⃣ Test Image Classification
-python inference.py --image sample.jpg
-
-
-📊 Model Evaluation
-python evaluate.py
-
-📊 Expected Output 
-✅ Accuracy: 92.5%  
-✅ F1-score: 91.2%  
-
-🤝 Contributing
-Pull requests are welcome! If you find any issues or have suggestions, feel free to open an Issue or submit a Pull Request.
-
-📬 Contact
-For any inquiries, reach out via LinkedIn or GitHub Issues.
+Chems Eddine Adel Kebaily, Master's student in Signal and Image Processing at ULCO (Université du Littoral Côte d'Opale). [Portfolio](https://chemseddine-kebaily.netlify.app), [LinkedIn](https://www.linkedin.com/in/chemseddineadel-keb).
